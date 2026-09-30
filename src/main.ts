@@ -94,7 +94,7 @@ function renderGrid(): void {
 }
 
 function renderFilters(): void {
-  const cats: Array<Category | 'Todos'> = ['Todos', 'Anillos', 'Collares', 'Pulseras', 'Pendientes'];
+  const cats: Array<Category | 'Todos'> = ['Todos', 'Anillos', 'Collares', 'Pulseras', 'Aretes'];
   const box = $('filters');
   box.innerHTML = cats
     .map(c => `<button role="tab" data-cat="${c}" aria-selected="${c === active}" class="${c === active ? 'on' : ''}">${c}</button>`)

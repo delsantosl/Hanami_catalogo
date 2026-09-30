@@ -1,11 +1,11 @@
 "use strict";
 // ── Configuración editable ──────────────────────────────────────────
 const CONFIG = {
-    phone: '+34 912 345 678',
-    whatsapp: '34600123456',
-    whatsappLabel: '+34 600 123 456',
+    phone: '+52 449 2099284',
+    whatsapp: '524492099284',
+    whatsappLabel: '+52 449 2099284',
     hours: 'Lunes a Sábado: 10:00 – 20:00 h',
-    instagram: '@hanami_joyeria',
+    instagram: '@hanami.santos',
     atelier: '@hanami_atelier',
     hashtag: '#HanamiPrimavera',
     currency: 'USD',
