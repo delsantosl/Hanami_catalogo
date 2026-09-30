@@ -16,8 +16,8 @@ const CONFIG = {
   whatsappLabel: '+52 449 209 9284',
   hours: 'Lunes a Sábado: 10:00 – 20:00 h',
   instagram: '@hanami.santos',
-  //atelier: '@hanami_atelier',
- // hashtag: '#HanamiPrimavera',
+  atelier: '@hanami_atelier',
+  hashtag: '#HanamiPrimavera',
   currency: 'USD',
 };
 
@@ -26,7 +26,7 @@ const PRODUCTS: Product[] = [
     description: 'Envuelto en oro de 18k con un diamante central talla brillante de 0.50ct y detalles florales que evocan el despertar del cerezo.', image: 'anillo-salara.jpg' },
   { name: 'Collar Pétalos de Oro', tag: 'Collar de Autor', category: 'Collares', price: 890,
     description: 'Cadena veneciana en oro con colgante en gota de 18 quilates y una delicada capa de pétalos que se mueve con la brisa.', image: 'collar-petalos.jpg' },
-  { name: 'Pendientes Rocío Rosa', tag: 'Pendientes', category: 'Pendientes', price: 760,
+  { name: 'Pendientes Rocío Rosa', tag: 'Aretes', category: 'Aretes', price: 760,
     description: 'Pendientes en oro rosa con cuarzo rosado facetado en forma de gota, rodeados por un marco de filigrana.', image: 'pendientes-rocio.jpg' },
   { name: 'Pulsera Eslabón Imperial', tag: 'Brazalete', category: 'Pulseras', price: 1850,
     description: 'Eslabones articulados entrelazados en oro de 18k pulido a mano, complementados con un cierre de seguridad discreto.', image: 'pulsera-eslabon.jpg' },
