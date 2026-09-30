@@ -1,4 +1,4 @@
-type Category = 'Anillos' | 'Collares' | 'Pulseras' | 'Pendientes';
+type Category = 'Anillos' | 'Collares' | 'Pulseras' | 'Aretes';
 
 interface Product {
   name: string;
@@ -11,13 +11,13 @@ interface Product {
 
 // ── Configuración editable ──────────────────────────────────────────
 const CONFIG = {
-  phone: '+34 912 345 678',
-  whatsapp: '34600123456',
-  whatsappLabel: '+34 600 123 456',
+  phone: '+52 449 209 9284',
+  whatsapp: '524492099284',
+  whatsappLabel: '+52 449 209 9284',
   hours: 'Lunes a Sábado: 10:00 – 20:00 h',
-  instagram: '@hanami_joyeria',
-  atelier: '@hanami_atelier',
-  hashtag: '#HanamiPrimavera',
+  instagram: '@hanami.santos',
+  //atelier: '@hanami_atelier',
+ // hashtag: '#HanamiPrimavera',
   currency: 'USD',
 };
 
@@ -56,15 +56,15 @@ function renderContact(): void {
   $('contact-rows').innerHTML = `
     <a class="row" href="tel:${CONFIG.phone.replace(/\s/g, '')}">
       <span class="row-icon" aria-hidden="true">☏</span>
-      <span><small>Línea boutique</small><strong>${esc(CONFIG.phone)}</strong></span>
+      <span><small>Contacto</small><strong>${esc(CONFIG.phone)}</strong></span>
     </a>
     <a class="row" href="https://wa.me/${CONFIG.whatsapp}" target="_blank" rel="noopener">
       <span class="row-icon" aria-hidden="true">✉</span>
-      <span><small>WhatsApp concierge</small><strong>${esc(CONFIG.whatsappLabel)}</strong></span>
+      <span><small>WhatsApp </small><strong>${esc(CONFIG.whatsappLabel)}</strong></span>
     </a>
     <div class="row">
       <span class="row-icon" aria-hidden="true">◷</span>
-      <span><small>Horario de boutique</small><strong>${esc(CONFIG.hours)}</strong></span>
+      <span><small>Horario</small><strong>${esc(CONFIG.hours)}</strong></span>
     </div>`;
   $('social').innerHTML = `Síguenos en Instagram<br>${esc(CONFIG.instagram)} · ${esc(CONFIG.atelier)}<br>${esc(CONFIG.hashtag)}`;
 }
