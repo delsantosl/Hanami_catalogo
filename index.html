@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hanami · Catálogo de Joyería</title>
+  <meta name="description" content="Colección Primavera Eterna: piezas artesanales en oro y piedras naturales.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <span class="brand">Hanami</span>
+    <span class="topbar-title">Catálogo Joyería</span>
+    <nav class="topnav" aria-label="Principal">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#coleccion">Colección</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="hero" id="coleccion">
+      <span class="badge">Edición limitada</span>
+      <h1>Colección Primavera Eterna</h1>
+      <p>Piezas artesanales en oro cálido y piedras naturales inspiradas en el florecer del cerezo japonés.</p>
+      <ul class="chips">
+        <li>Oro 18k Oamano</li>
+        <li>Certificado Gemológico</li>
+      </ul>
+    </section>
+
+    <section class="contact" id="contacto" aria-labelledby="contact-title">
+      <div class="contact-icon" aria-hidden="true">◈</div>
+      <h2 id="contact-title">Atención Personalizada</h2>
+      <p>Nuestro equipo de gemología y diseñadores de alta joyería está a tu disposición para consultas exclusivas y encargos a medida.</p>
+      <div class="contact-rows" id="contact-rows"></div>
+      <p class="social" id="social"></p>
+      <p class="note">Certificado gemológico y envío asegurado en todas nuestras creaciones.</p>
+    </section>
+
+    <section class="catalog" id="catalogo">
+      <div class="catalog-head">
+        <div>
+          <p class="kicker">Catálogo principal</p>
+          <h2>Obras Selectas</h2>
+        </div>
+        <span class="count" id="count"></span>
+      </div>
+      <div class="filters" id="filters" role="tablist" aria-label="Categorías"></div>
+      <div class="grid" id="grid"></div>
+    </section>
+  </main>
+
+  <nav class="bottomnav" aria-label="Móvil">
+    <a href="#catalogo">Catálogo</a>
+    <a href="#coleccion">Colección</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <script type="module" src="dist/main.js"></script>
+</body>
+</html>
