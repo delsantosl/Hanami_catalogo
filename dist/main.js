@@ -33,7 +33,7 @@ const $ = (id) => {
 };
 const esc = (s) => s.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const money = (n) => `$${n.toLocaleString('en-US')}`;
-const waLink = (p) => `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(`Hola, me gustaría reservar: ${p.name} (${money(p.price)} ${CONFIG.currency})`)}`;
+const waLink = (p) => `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(`Hola, me gustaría preguntar por: ${p.name} (${money(p.price)} ${CONFIG.currency})`)}`;
 // ── Render ──────────────────────────────────────────────────────────
 function renderContact() {
     $('contact-rows').innerHTML = `

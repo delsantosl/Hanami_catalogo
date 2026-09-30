@@ -49,7 +49,7 @@ const esc = (s: string): string =>
 const money = (n: number): string => `$${n.toLocaleString('en-US')}`;
 
 const waLink = (p: Product): string =>
-  `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(`Hola, me gustaría reservar: ${p.name} (${money(p.price)} ${CONFIG.currency})`)}`;
+  `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(`Hola, me gustaría preguntar por: ${p.name} (${money(p.price)} ${CONFIG.currency})`)}`;
 
 // ── Render ──────────────────────────────────────────────────────────
 function renderContact(): void {
