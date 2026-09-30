@@ -12,7 +12,7 @@ interface Product {
 // ── Configuración editable ──────────────────────────────────────────
 const CONFIG = {
   phone: '+52 449 209 9284',
-  whatsapp: '524492099284',
+  whatsapp: '52 449 209 9284',
   whatsappLabel: '+52 449 209 9284',
   hours: 'Lunes a Sábado: 10:00 – 20:00 h',
   instagram: '@hanami.santos',
