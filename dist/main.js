@@ -1,9 +1,9 @@
 "use strict";
 // ── Configuración editable ──────────────────────────────────────────
 const CONFIG = {
-    phone: '+52 449 2099284',
+    phone: '+52 449 209 9284',
     whatsapp: '524492099284',
-    whatsappLabel: '+52 449 2099284',
+    whatsappLabel: '+52 449 209 9284',
     hours: 'Lunes a Sábado: 10:00 – 20:00 h',
     instagram: '@hanami.santos',
     atelier: '@hanami_atelier',
@@ -15,7 +15,7 @@ const PRODUCTS = [
         description: 'Envuelto en oro de 18k con un diamante central talla brillante de 0.50ct y detalles florales que evocan el despertar del cerezo.', image: 'anillo-salara.jpg' },
     { name: 'Collar Pétalos de Oro', tag: 'Collar de Autor', category: 'Collares', price: 890,
         description: 'Cadena veneciana en oro con colgante en gota de 18 quilates y una delicada capa de pétalos que se mueve con la brisa.', image: 'collar-petalos.jpg' },
-    { name: 'Pendientes Rocío Rosa', tag: 'Pendientes', category: 'Pendientes', price: 760,
+    { name: 'Pendientes Rocío Rosa', tag: 'Aretes', category: 'Aretes', price: 760,
         description: 'Pendientes en oro rosa con cuarzo rosado facetado en forma de gota, rodeados por un marco de filigrana.', image: 'pendientes-rocio.jpg' },
     { name: 'Pulsera Eslabón Imperial', tag: 'Brazalete', category: 'Pulseras', price: 1850,
         description: 'Eslabones articulados entrelazados en oro de 18k pulido a mano, complementados con un cierre de seguridad discreto.', image: 'pulsera-eslabon.jpg' },
@@ -39,15 +39,15 @@ function renderContact() {
     $('contact-rows').innerHTML = `
     <a class="row" href="tel:${CONFIG.phone.replace(/\s/g, '')}">
       <span class="row-icon" aria-hidden="true">☏</span>
-      <span><small>Línea boutique</small><strong>${esc(CONFIG.phone)}</strong></span>
+      <span><small>Contacto</small><strong>${esc(CONFIG.phone)}</strong></span>
     </a>
     <a class="row" href="https://wa.me/${CONFIG.whatsapp}" target="_blank" rel="noopener">
       <span class="row-icon" aria-hidden="true">✉</span>
-      <span><small>WhatsApp concierge</small><strong>${esc(CONFIG.whatsappLabel)}</strong></span>
+      <span><small>WhatsApp </small><strong>${esc(CONFIG.whatsappLabel)}</strong></span>
     </a>
     <div class="row">
       <span class="row-icon" aria-hidden="true">◷</span>
-      <span><small>Horario de boutique</small><strong>${esc(CONFIG.hours)}</strong></span>
+      <span><small>Horario</small><strong>${esc(CONFIG.hours)}</strong></span>
     </div>`;
     $('social').innerHTML = `Síguenos en Instagram<br>${esc(CONFIG.instagram)} · ${esc(CONFIG.atelier)}<br>${esc(CONFIG.hashtag)}`;
 }
@@ -73,7 +73,7 @@ function renderGrid() {
     $('count').textContent = `${list.length} ${list.length === 1 ? 'creación' : 'creaciones'}`;
 }
 function renderFilters() {
-    const cats = ['Todos', 'Anillos', 'Collares', 'Pulseras', 'Pendientes'];
+    const cats = ['Todos', 'Anillos', 'Collares', 'Pulseras', 'Aretes'];
     const box = $('filters');
     box.innerHTML = cats
         .map(c => `<button role="tab" data-cat="${c}" aria-selected="${c === active}" class="${c === active ? 'on' : ''}">${c}</button>`)
